@@ -20,5 +20,9 @@ describe Game do
       @game.play(1, 2)
       expect(@game.grid_state).to eq "X0.\n...\n...\n"
     end
+    it "should let player 1 and player 2 to fill the grid" do
+      [1, 2, 3].each { |x| [1, 2, 3].each { |y| @game.play(x, y) } }
+      expect(@game.grid_state).to eq "X0X\n0X0\nX0X\n"
+    end
   end
 end

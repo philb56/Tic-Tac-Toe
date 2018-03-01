@@ -25,4 +25,12 @@ describe Grid do
       expect(subject.grid_state).to eq "...\n..X\n...\n"
     end
   end
+  context 'validate move' do
+
+    subject(:grid) { described_class.new() }
+    it 'should be able to add a move to the grid at 1,1' do
+      message = 'This is not a valid move - should be between 1,1 and 3,3'
+      expect(subject.play(0, 4, "X")).to eq message
+    end
+  end
 end
