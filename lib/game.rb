@@ -11,4 +11,9 @@ class Game
   def whose_turn
     @turn.whose_turn
   end
+
+  def play(x, y)
+    @grid.play(x, y, @turn.current_player.move_type)
+    @turn.change_turn
+  end
 end
