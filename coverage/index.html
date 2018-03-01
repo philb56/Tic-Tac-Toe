@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-03-01T14:05:23+00:00">2018-03-01T14:05:23+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-03-01T16:41:36+00:00">2018-03-01T16:41:36+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.89
+         2.04
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>4</b> files in total.
-    <b>50</b> relevant lines. 
-    <span class="green"><b>50</b> lines covered</span> and
+    <b>6</b> files in total.
+    <b>75</b> relevant lines. 
+    <span class="green"><b>75</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -49,6 +49,16 @@
       </tr>
     </thead>
     <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#def74059469ca7dccb9b12bf19194c96a1e49166" class="src_link" title="lib/game.rb">lib/game.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
       
       <tr>
         <td class="strong"><a href="#eebacc9fbeb3592590d82a266403ac94e2231e45" class="src_link" title="lib/player.rb">lib/player.rb</a></td>
@@ -67,7 +77,17 @@
         <td>16</td>
         <td>16</td>
         <td>0</td>
-        <td>2.8</td>
+        <td>3.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4d09a11ab78d8feabb22756158dc3fa6032990df" class="src_link" title="spec/unit/game_spec.rb">spec/unit/game_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>14</td>
+        <td>14</td>
+        <td>0</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -83,11 +103,11 @@
       <tr>
         <td class="strong"><a href="#f95eef12ad6a95c3e686e348dee92c26eb91a2d5" class="src_link" title="spec/unit/turn_spec.rb">spec/unit/turn_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>26</td>
-        <td>18</td>
-        <td>18</td>
+        <td>30</td>
+        <td>21</td>
+        <td>21</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>2.1</td>
       </tr>
       
     </tbody>
@@ -105,6 +125,115 @@
       </div>
     
       <div class="source_files">
+      
+        <div class="source_table" id="def74059469ca7dccb9b12bf19194c96a1e49166">
+  <div class="header">
+    <h3>lib/game.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Game</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # attr_reader :grid</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(grid, turn)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @grid = grid</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @turn = turn</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def grid_state</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @grid.grid_state</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def whose_turn</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @turn.whose_turn</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="eebacc9fbeb3592590d82a266403ac94e2231e45">
   <div class="header">
@@ -253,32 +382,32 @@
           <code class="ruby">  def initialize(player1, player2)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="6">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="6">
+          <span class="hits">7</span>
           
           <code class="ruby">    @player1 = player1</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="7">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
           
           <code class="ruby">    @player2 = player2</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="8">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="8">
+          <span class="hits">7</span>
           
           <code class="ruby">    @player1.allocate_move_type(CROSS)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="9">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
           
           <code class="ruby">    @player2.allocate_move_type(NOUGHT)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="10">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="10">
+          <span class="hits">7</span>
           
           <code class="ruby">    @turn = 1</code>
         </li>
@@ -307,8 +436,8 @@
           <code class="ruby">    &quot;Player #{@turn} - #{current_player.name} &quot; +</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="15">
+          <span class="hits">3</span>
           
           <code class="ruby">    &quot;- please play #{current_player.move_type}&quot;</code>
         </li>
@@ -331,8 +460,8 @@
           <code class="ruby">  def change_turn</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="9" data-linenumber="19">
+          <span class="hits">9</span>
           
           <code class="ruby">    @turn = (@turn == 1 ? 2 : 1)</code>
         </li>
@@ -355,8 +484,8 @@
           <code class="ruby">  def current_player</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="23">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="23">
+          <span class="hits">6</span>
           
           <code class="ruby">    @turn == 1 ? @player1 : @player2</code>
         </li>
@@ -374,6 +503,133 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4d09a11ab78d8feabb22756158dc3fa6032990df">
+  <div class="header">
+    <h3>spec/unit/game_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;game&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Game do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="3">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  let(:turn) { double :turn, whose_turn: &#39;Player1&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  let(:grid) { double :grid, grid_state: &quot;...\n...\n...&quot; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  subject(:game) { described_class.new(:grid, :turn) }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &#39;Game setup&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should be able to report the state of the grid&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game = Game.new(grid, turn)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(grid).to receive(:grid_state)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.grid_state</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should be able to report whose turn it is&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game = Game.new(grid, turn)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(turn).to receive(:whose_turn)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.whose_turn</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -480,8 +736,8 @@
     <h3>spec/unit/turn_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>21</b> relevant lines. 
+      <span class="green"><b>21</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -501,20 +757,20 @@
           <code class="ruby">describe Turn do</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="3">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="3">
+          <span class="hits">6</span>
           
           <code class="ruby">  let(:player1) { double :player, allocate_move_type: &#39;X&#39;, name: :Bud, move_type: &#39;X&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="4">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="4">
+          <span class="hits">6</span>
           
           <code class="ruby">  let(:player2) { double :player, allocate_move_type: &#39;0&#39;, name: :Lou, move_type: &#39;0&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
           
           <code class="ruby">  subject(:turn) { described_class.new(player1, player2) }</code>
         </li>
@@ -633,13 +889,37 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should be able state whose go is ninth&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="26">
+          <span class="hits">9</span>
+          
+          <code class="ruby">      8.times { subject.change_turn }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(subject.whose_turn).to eq &#39;Player 1 - Bud - please play X&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>

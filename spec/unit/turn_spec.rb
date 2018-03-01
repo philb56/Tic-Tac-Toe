@@ -22,5 +22,9 @@ describe Turn do
       subject.change_turn
       expect(subject.whose_turn).to eq 'Player 2 - Lou - please play 0'
     end
+    it 'should be able state whose go is ninth' do
+      8.times { subject.change_turn }
+      expect(subject.whose_turn).to eq 'Player 1 - Bud - please play X'
+    end
   end
 end
