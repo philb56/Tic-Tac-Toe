@@ -4,5 +4,5 @@ ruby '2.4.1'
 
 group :test, :development do
   gem 'rspec'
-  gem 'simplecov', require: false 
+  gem 'simplecov', require: false
 end

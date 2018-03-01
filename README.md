@@ -23,6 +23,7 @@ Classes:
 Player - understands whether to play X or 0
 Grid - controls the playing area eg knows which fields are available to play
 Turn - controls which player plays and terminates the game with a win or draw message
+Game - has knowledge of Player, Grid and Turn - controls the whole game
 
 
 How to run rspec tests & simplecov coverage stats
