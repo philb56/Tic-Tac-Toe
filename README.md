@@ -16,6 +16,15 @@ The rules of tic-tac-toe are as follows:
 
 Build the business logic for a game of tic tac toe. It should be easy to implement a working game of tic tac toe by combining your code with any user interface, whether web or command line.
 
+## Approach
+
+Classes:
+
+Player - understands whether to play X or 0
+Grid - controls the playing area eg knows which fields are available to play
+Turn - controls which player plays and terminates the game with a win or draw message
+
+
 How to run rspec tests & simplecov coverage stats
 =================================================
 git clone https://github.com/philb56/Tic-Tac-Toe.git

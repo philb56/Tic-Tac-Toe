@@ -1,7 +1,31 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/philbugden/projects/week9/Tic-Tac-Toe/spec/unit/player_spec.rb": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/philbugden/projects/week9/Tic-Tac-Toe/lib/player.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ]
     },
-    "timestamp": 1519904850
+    "timestamp": 1519906419
   }
 }
