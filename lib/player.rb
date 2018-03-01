@@ -1,11 +1,14 @@
 class Player
 
-  def initialize(name, move_type)
+  def initialize(name)
     @name = name
-    @move_type = move_type
   end
 
   def identity
-    "#{@name} (#{@move_type})"
+    @name
+  end
+
+  def allocate_move_type(move_type)
+    @move_type = move_type
   end
 end
