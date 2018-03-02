@@ -13,25 +13,25 @@ describe Game do
     end
     it "should let player 1 play a move" do
       @game.play(1, 1)
-      expect(@game.grid_state).to eq "X..\n...\n...\n"
+      expect(@game.grid_state).to eq "X........"
     end
     it "should let player 1 and player 2 play a move" do
       @game.play(1, 1)
       @game.play(1, 2)
-      expect(@game.grid_state).to eq "X0.\n...\n...\n"
+      expect(@game.grid_state).to eq "X0......."
     end
     it "should let player 1 and player 2 to fill the grid" do
       [1, 2].each { |x| [1, 2, 3].each { |y| @game.play(x, y) } }
       @game.play(3, 2)
       @game.play(3, 1)
       @game.play(3, 3)
-      expect(@game.grid_state).to eq "X0X\n0X0\n0XX\n"
+      expect(@game.grid_state).to eq "X0X0X00XX"
     end
     it "should allow player to replay a move if the move was invalid" do
       @game.play(1, 1)
       @game.play(1, 1)
       @game.play(1, 2)
-      expect(@game.grid_state).to eq "X0.\n...\n...\n"
+      expect(@game.grid_state).to eq "X0......."
     end
     it "should return whose go next" do
       expect(@game.play(1, 1)).to eq 'Player 2 - Lou - please play 0'

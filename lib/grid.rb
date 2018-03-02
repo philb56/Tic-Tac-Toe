@@ -21,7 +21,7 @@ class Grid
 
   def grid_state
     state = ""
-    @grid.each { |line| state += "#{line.join}\n" }
+    @grid.each { |line| state += line.join }
     state
   end
 
