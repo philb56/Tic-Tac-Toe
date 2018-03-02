@@ -13,7 +13,8 @@ class Game
   end
 
   def game_over
-    @grid.check_for_a_win(@turn.current_player.name, @turn.current_player.move_type)
+    @grid.check_for_a_win(@turn.current_player.name,
+                         @turn.current_player.move_type)
   end
 
   def game_state

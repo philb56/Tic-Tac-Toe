@@ -6,9 +6,9 @@ class Grid
     @grid = [[".", ".", "."], [".", ".", "."], [".", ".", "."]]
   end
 
-  def check_for_a_win(name,move_type)
+  def check_for_a_win(name, move_type)
     win_line = move_type * 3
-    x = "#{name} wins" if (
+    "#{name} wins" if (
       @grid[0].join == win_line ||
       @grid[1].join == win_line ||
       @grid[2].join == win_line ||
@@ -17,7 +17,6 @@ class Grid
       @grid.transpose[2].join == win_line ||
       (@grid[0][0] + @grid[1][1] + @grid[2][2]) == win_line ||
       (@grid[2][0] + @grid[1][1] + @grid[0][2]) == win_line)
-     return x
   end
 
   def grid_state
