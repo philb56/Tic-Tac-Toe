@@ -26,11 +26,19 @@ describe Grid do
     end
   end
   context 'validate move' do
-
     subject(:grid) { described_class.new() }
-    it 'should be able to add a move to the grid at 1,1' do
+    it 'should not be able to move off the grid in the X direction' do
       message = 'This is not a valid move - should be between 1,1 and 3,3'
-      expect(subject.play(0, 4, "X")).to eq message
+      expect(subject.play(0, 3, "X")).to eq message
+    end
+    it 'should not be able to move off the grid in the Y direction' do
+      message = 'This is not a valid move - should be between 1,1 and 3,3'
+      expect(subject.play(1, 4, "X")).to eq message
+    end
+    it 'should not be able to play in a field that has already been taken' do
+      message = 'This move has already been played'
+      subject.play(1, 1, "X")
+      expect(subject.play(1, 1, "Y")).to eq message
     end
   end
 end

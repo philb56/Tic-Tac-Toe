@@ -22,6 +22,9 @@ class Grid
     if invalid_coordinate(x) || invalid_coordinate(y)
       return 'This is not a valid move - should be between 1,1 and 3,3'
     end
+    if move_already_played(x, y)
+      return 'This move has already been played'
+    end
     return VALID
   end
 
@@ -29,5 +32,9 @@ class Grid
 
   def invalid_coordinate(coord)
     !((coord.is_a? Integer) && coord >= 1 && coord <= 3)
+  end
+
+  def move_already_played(x, y)
+    @grid[x - 1][y - 1] != DOT
   end
 end
