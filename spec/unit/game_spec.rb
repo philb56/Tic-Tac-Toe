@@ -19,9 +19,9 @@ describe Game do
     it 'should be able to make a move' do
       game = Game.new(grid, turn)
       allow(turn).to receive(:current_player)
-      allow(turn.current_player).to receive(:move_type).and_return("X")
+      allow(turn.current_player).to receive(:move_type).and_return('X')
       allow(turn).to receive(:change_turn)
-      expect(grid).to receive(:play).with(1, 2, "X")
+      expect(grid).to receive(:play).with(1, 2, 'X')
       game.play(1, 2)
     end
   end
